@@ -1,0 +1,237 @@
+/* Banner Section */
+
+.Banner {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+}
+
+.title-animation {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    font-size: 4rem; 
+    font-family: "doublebass", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-shadow: 2px 2px 4px black; 
+}
+
+.drop-letter {
+    display: inline-block;
+    transform: translateY(-200px);
+    animation: dropIn 0.6s ease-out forwards;
+    position: relative;
+    color: #f6e7d8;
+}
+
+.drop-letter::before {
+    content: '';
+    position: relative;
+    top: -50px;
+    left: 50%;
+    width: 2px;
+    height: 50px;
+    background: black;
+    transform: translateX(-50%);
+}
+
+.drop-letter:nth-child(n) {
+    animation-delay: calc(0.1s * var(--i));
+}
+
+.drop-letter:nth-child(1) { --i: 1; }
+.drop-letter:nth-child(2) { --i: 2; }
+.drop-letter:nth-child(3) { --i: 3; }
+.drop-letter:nth-child(4) { --i: 4; }
+.drop-letter:nth-child(5) { --i: 5; }
+.drop-letter:nth-child(6) { --i: 6; }
+.drop-letter:nth-child(7) { --i: 7; }
+.drop-letter:nth-child(8) { --i: 8; }
+.drop-letter:nth-child(9) { --i: 9; }
+.drop-letter:nth-child(10) { --i: 10; }
+.drop-letter:nth-child(11) { --i: 11; }
+.drop-letter:nth-child(12) { --i: 12; }
+.drop-letter:nth-child(13) { --i: 13; }
+.drop-letter:nth-child(14) { --i: 14; }
+.drop-letter:nth-child(15) { --i: 15; }
+.drop-letter:nth-child(16) { --i: 16; }
+.drop-letter:nth-child(17) { --i: 17; }
+.drop-letter:nth-child(18) { --i: 18; }
+
+@keyframes dropIn {
+    to {
+        transform: translateY(0);
+    }
+}
+
+.typewriter-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.typewriter-text {
+    font-family: monospace;
+    color: #f6e7d8;
+    font-size: 2rem;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    animation:
+        typing 3s steps(20, end) 1.5s forwards,
+        blink 0.6s step-end infinite;
+}
+
+/* Typewriter effect */
+@keyframes typing {
+    from { width: 0; }
+    to { width: 21ch; }
+}
+
+/* Blinking cursor effect */
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
+/* Topography effect */
+#topoCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 75%;
+    z-index: 0;
+}
+
+/* Socials */
+
+.social-buttons {
+    display: flex;
+    margin-top: 5%;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-button {
+    z-index: 10;
+    background-color: #f6e7d8;
+    color: black;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: larger;
+    transition: background-color 0.3s ease;
+}
+
+.social-button:hover, 
+.social-button:focus {
+    background-color: #333;
+    outline: 2px solid #f6e7d8; 
+}
+
+/* Intro Section */
+.intro {
+    display: flex;
+    margin-top: 5%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    text-align: center;
+    flex-wrap: wrap; 
+}
+
+.intro-text {
+    width: 50%;
+}
+
+.intro-image {
+    width: 100%;
+    max-width: 80vw; 
+}
+
+.intro-image img {
+    margin-top: 5%;
+    height: auto;
+    width: 75%;
+    border-radius: 10px;
+}
+
+/* Pixel */
+
+.pixel-image {
+    padding: var(--container-padding);
+    justify-content: center;
+    align-items: center;
+    min-height: 100svh;
+    display: flex;
+    position: relative;
+    margin-right: 5%;
+}
+
+.pixelated-image-card {
+    background-color: black;
+    color: black;
+    border-radius: .5em;
+    width: 30vw;
+    max-width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.before {
+    padding-top: 100%;
+}
+
+.pixelated-image-card__default,
+.pixelated-image-card__img,
+.pixelated-image-card__active,
+.pixelated-image-card__pixels {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.pixelated-image-card__active {
+    display: none;
+}
+
+.pixelated-image-card__pixel {
+    background-color: currentColor;
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: absolute;
+}
+
+/* Mobile*/
+@media (max-width: 768px) {
+    .title-animation {
+        font-size: 2rem; 
+        margin-top: 50px;
+    }
+
+    .intro {
+        flex-direction: column; 
+        padding: 20px;
+    }
+
+    .intro-text {
+        width: 100%; 
+    }
+
+    .intro-image img {
+        width: 90%; 
+        height: auto;
+    }
+
+    .social-buttons {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+

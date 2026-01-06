@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo Portfolio Site</title>
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="Images/logo.png" title="Favicon" />
+
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="CSS/reset.css">
+  <link rel="stylesheet" href="CSS/general.css">
+  <link rel="stylesheet" href="CSS/home.css">
+  <link rel="stylesheet" href="CSS/top.css">
+
+  <!--Fonts-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Slackside+One&display=swap">
+  <link rel="stylesheet" href="https://use.typekit.net/ukc4tzy.css">
+</head>
+
+<header class="header">
+  <div class="logo">
+    <a href="#home">
+      <img src="Images/logo.png" alt="star shaped logo" class="logo">
+    </a>
+  </div>
+  <nav>
+    <a href="#home" class="nav-item" data-text="Home">
+      <span class="nav-text top">Home</span>
+      <span class="nav-text bottom">Home</span>
+    </a>
+    <a href="#resume" class="nav-item" data-text="resume">
+      <span class="nav-text top">Resume</span>
+      <span class="nav-text bottom">Resume</span>
+    </a>
+    <a href="#gallery" class="nav-item" data-text="Gallery">
+      <span class="nav-text top">Gallery</span>
+      <span class="nav-text bottom">Gallery</span>
+    </a>
+    <a href="#contact" class="nav-item" data-text="Contact Me">
+      <span class="nav-text top">Contact Me</span>
+      <span class="nav-text bottom">Contact Me</span>
+    </a>
+  </nav>
+</header>
+
+
+<body>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div id="water-line-wrapper">
+      <div id="water-line"></div>
+    </div>
+  </div>
+
+  <!-- Banner -->
+  <section id="home">
+
+    <section class="Banner">
+      <!-- topography effect -->
+      <canvas id="topoCanvas"></canvas>
+
+      <br>
+      <div class="title-animation">
+        <span class="drop-letter">C</span>
+        <span class="drop-letter">R</span>
+        <span class="drop-letter">E</span>
+        <span class="drop-letter">A</span>
+        <span class="drop-letter">T</span>
+        <span class="drop-letter">I</span>
+        <span class="drop-letter">V</span>
+        <span class="drop-letter">E</span>
+        <span class="drop-letter">&nbsp;</span>
+        <span class="drop-letter">P</span>
+        <span class="drop-letter">O</span>
+        <span class="drop-letter">R</span>
+        <span class="drop-letter">T</span>
+        <span class="drop-letter">F</span>
+        <span class="drop-letter">O</span>
+        <span class="drop-letter">L</span>
+        <span class="drop-letter">I</span>
+        <span class="drop-letter">O</span>
+      </div>
+      <div class="typewriter-container">
+        <h2 class="typewriter-text">By: Catherine Pitman</h2>
+      </div>
+    </section>
+
+    <div class="social-buttons">
+      <a href="https://www.linkedin.com/in/catherine-pitman2006/" class="social-button" target="_blank">LinkedIn</a>
+      <a href="https://indd.adobe.com/view/b6a2ff7a-10d2-4f6b-a774-1cf3be46d494" class="social-button"
+        target="_blank">Old
+        Portfolio</a>
+      <button class="social-button" id="emailButton">Email</button>
+    </div>
+
+    <section class="main">
+      <!-- Intro Section -->
+      <section class="intro">
+        <div class="intro-text">
+          <h1>Welcome to My Portfolio!</h1>
+          <br>
+          <h4>Hi! My name is Catherine Pitman and I am 19.</h4>
+          <br>
+          <p>I am a first year student at Carleton University, getting my bachelors in Information Technology,
+            specializing in Interactive Multimedia Design.</p>
+          <br>
+          <p>I am a highly self-motivated individual eager to transition into the IT field. I am passionate about
+            learning
+            new skills and excited about building a career in IT. I have a strong capability to learn complex concepts
+            independently, efficiently and am consistently seeking self-improvement. I am able to thrive in fast-paced,
+            high-pressure environments while maintaining a friendly demeanor. I aim to leverage my customer service
+            abilities, organizational skills, and problem-solving expertise while embracing new technical challenges.
+          </p>
+        </div>
+
+        <section class="pixel-image">
+          <div data-hover="" data-pixelated-image-reveal="" class="pixelated-image-card">
+            <div class="before"></div>
+            <div class="pixelated-image-card__default">
+              <img src="Images/headshot.png" width="400" alt="Black and White photo of me" class="pixelated-image-card__img">
+            </div>
+            <div data-pixelated-image-reveal-active="" class="pixelated-image-card__active">
+              <img src="Images/placeholder.png" width="400" alt="Black image with white text: woah look at that cool effect!" class="pixelated-image-card__img">
+            </div>
+            <div data-pixelated-image-reveal-grid="" class="pixelated-image-card__pixels">
+              <div class="pixelated-image-card__pixel"></div>
+            </div>
+          </div>
+        </section>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+      </section>
+    </section>
+
+    <!-- Marquee -->
+    <div class="marquee-container">
+      <div class="marquee-track">
+        <span class="marquee-content">
+          PROGRAMMER–ARTIST–PRODUCER–DESIGNER–WRITER–COMPOSER–MUSICIAN–
+          PROGRAMMER–ARTIST–PRODUCER–DESIGNER–WRITER–COMPOSER–MUSICIAN–
+          PROGRAMMER–ARTIST–PRODUCER–DESIGNER–WRITER–COMPOSER–MUSICIAN–
+          PROGRAMMER–ARTIST–PRODUCER–DESIGNER–WRITER–COMPOSER–MUSICIAN–
+          PROGRAMMER–ARTIST–PRODUCER–DESIGNER–WRITER–COMPOSER–MUSICIAN–
+          PROGRAMMER–ARTIST–PRODUCER–DESIGNER–WRITER–COMPOSER–MUSICIAN–
+        </span>
+      </div>
+    </div>
+
+
+
+    <!-- Resume Section -->
+    <section id="resume">
+      <section class="resume">
+
+        <!-- Resume Thumbnail -->
+        <div class="resume-thumbnail" onclick="openResume()">
+          <img src="Images/RESUME1.jpg" alt="First page of my resume" />
+        </div>
+
+        <div class="resume-text">
+          <h1>Resume</h1>
+          <br>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, incidunt, fugiat ad suscipit earum harum
+            odio
+            enim consectetur quis magni, aperiam accusamus accusantium necessitatibus asperiores error minima adipisci
+            doloribus dolor.lore
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, eligendi quod animi nobis nihil ea
+            repudiandae deleniti dolorem non accusantium, eius maxime neque? Incidunt, explicabo error autem dolore
+            provident eius.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, impedit a est veritatis animi corporis
+            dolorem dignissimos reprehenderit possimus rem! Assumenda quibusdam eligendi qui! Nam optio atque at quam
+            nostrum.</p>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, incidunt, fugiat ad suscipit earum harum
+            odio
+            enim consectetur quis magni, aperiam accusamus accusantium necessitatibus asperiores error minima adipisci
+            doloribus dolor.lore
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, eligendi quod animi nobis nihil ea
+            repudiandae deleniti dolorem non accusantium, eius maxime neque? Incidunt, explicabo error autem dolore
+            provident eius.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, impedit a est veritatis animi corporis
+            dolorem dignissimos reprehenderit possimus rem! Assumenda quibusdam eligendi qui! Nam optio atque at quam
+            nostrum.</p>
+        </div>
+      </section>
+
+      <!-- Resume Modal -->
+      <div id="resumeModal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeResume()">&times;</span>
+
+          <!-- Arrows -->
+          <div class="arrow left-arrow" onclick="navigatePage('left')">&#8592;</div>
+
+          <!-- Resume Images -->
+          <img id="resumePage1" class="resume-page" src="Images/RESUME1.jpg" alt="Resume Page 1" />
+          <img id="resumePage2" class="resume-page" src="Images/RESUME2.jpg" alt="Resume Page 2" />
+
+          <div class="arrow right-arrow" onclick="navigatePage('right')">&#8594;</div>
+        </div>
+      </div>
+
+      <!-- Programs -->
+      <section id="programs">
+        <h1>Programs I Use</h1>
+        <br>
+        <div class="programs-container">
+          <button class="program-code">HTML</button>
+          <button class="program-code">CSS</button>
+          <button class="program-code">JavaScript</button>
+          <button class="program-code">Python</button>
+          <button class="program-art">Adobe Photoshop</button>
+          <button class="program-art">Adobe Illustrator</button>
+          <button class="program-art">Adobe InDesign</button>
+          <button class="program-art">Adobe Animate</button>
+          <button class="program-art">Blender</button>
+          <button class="program-music">Studio One 5</button>
+          <button class="program-music">FL Studios</button>
+          <button class="program-music">Logic Pro</button>
+          <button class="program-music">Soundtrap</button>
+          <button class="program-video">Adobe Premiere Pro</button>
+          <button class="program-video">Adobe After Effects</button>
+          <button class="program-video">Lightworks</button>
+        </div>
+      </section>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+      <section class="gallery">
+        <div class="gallery-text">
+          <h1>Gallery</h1>
+          <br>
+          <p>Here you can see an example of a horizontal gallery! Using GSAP's ScrollTrigger, I was able to simulate
+            horizontal scrolling without actually changing anything on the user end. Not all of these images are mine! You can identify which is which through the image descriptions</p>
+        </div>
+
+        <div id="image-track">
+          <div class="image-container">
+            <img class="image" src="Images/img1.jpg" alt="Book open on grass" draggable="false" />
+            <span class="image-description">Image taken from Unsplash.com</span>
+          </div>
+          <div class="image-container">
+            <img class="image" src="Images/img2.jpg" alt="close up eyeball, hands ripping film around it" draggable="false" />
+            <span class="image-description">Image taken from Unsplash.com</span>
+          </div>
+          <div class="image-container">
+            <img class="image" src="Images/img3.jpg" alt="girl looking into camera smearing red substance over face" draggable="false" />
+            <span class="image-description">Image taken from Unsplash.com</span>
+          </div>
+          <div class="image-container">
+            <img class="image" src="Images/img4.jpg" alt="perspective shot from inside a building looking at rows of windows" draggable="false" />
+            <span class="image-description">Image taken from Unsplash.com</span>
+          </div>
+          <div class="image-container">
+            <img class="image" src="Images/img5.jpg" alt="branches with red flowers in a vase on a counter in a green room" draggable="false" />
+            <span class="image-description">Image taken from Unsplash.com</span>
+          </div>
+          <div class="image-container">
+            <img class="image" src="Images/img6.jpg" alt="red Led sign outside of restaurant with mandarin text: Fresh Noodles " draggable="false" />                              
+            <span class="image-description">Image taken from Unsplash.com</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gallery 2 Section -->
+      <section class="gallery-right">
+        <div id="image-track-right">
+          <div class="image-container">
+            <img class="image" src="Images/pimg1.jpg" alt="3d model of an apocolyptic cityscape" draggable="false" />
+            <span class="image-description">Photo: "Eyespy"</span>
+          </div>
+          <div class="image-container">
+            <img class="image" src="Images/pimg2.jpg" alt="Pen drawing of a vampire robot biting cd" draggable="false" />
+            <span class="image-description">Charcoal and pencil drawing: "Crow"</span>
+          </div>
+          <div class="image-container">
+            <img class="image" src="Images/pimg3.jpg" alt="sculpture of hands splashing up water" draggable="false" />
+            <span class="image-description">Colored pencil drawing:"Greenhouse"</span>
+          </div>
+          <div class="image-container">
+            <img class="image" src="Images/pimg4.jpg" alt="pencil drawing of person in hazmat suit in a greenhouse" draggable="false" />
+            <span class="image-description">Clay sculpture with melted plastic: "Splash!"</span>
+          </div>
+          <div class="image-container">
+            <img class="image" src="Images/pimg5.jpg" alt="charcoal and pencil drawing of bird carcass on ground" draggable="false" />
+            <span class="image-description">Pen drawing: "Eject"</span>
+          </div>
+          <div class="image-container">
+            <img class="image" src="Images/pimg6.jpg" alt="photo of a bathroom cabinet full of random things" draggable="false" />
+            <span class="image-description">3d model made in blender: "Cranes"</span>
+          </div>
+        </div>
+      </section>
+    </section>
+
+
+    <div class="album-trigger"></div>
+
+    <!-- filler -->
+
+    <section class="filler">
+      <div class="filler-text">
+        <h1>Filler</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, incidunt, fugiat ad suscipit earum harum
+          odio
+          enim consectetur quis magni, aperiam accusamus accusantium necessitatibus asperiores error minima adipisci
+          doloribus dolor.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam, atque nostrum officia aut
+          porro odio
+          repellendus fugiat, impedit culpa laborum veritatis id, nesciunt minus obcaecati est dolor at consequuntur
+          amet!Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam, atque nostrum officia aut porro odio
+          repellendus fugiat, impedit culpa laborum veritatis id, nesciunt minus obcaecati est dolor at consequuntur
+          amet!</p>
+      </div>
+    </section>
+
+
+    <!-- Modal -->
+
+    <div class="modal" id="imageModal">
+      <div class="modal-content-wrapper">
+        <img class="modal-content" id="modalImg">
+        <div class="modal-text" id="modalText"></div>
+        <div id="spotifyEmbed" style="width: 100%; margin-top: 20px;"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- albums -->
+
+  <div class="wrapper">
+    <div class="main-content">
+      <div class="text-box">
+        <h1>Album Display</h1>
+        <br>
+        <h3> Here are some albums I've been listening to lately, click on each album cover to learn more! </h3>
+        <br>
+        <h4>When you click on the album cover it may take a few seconds to load, sorry!</h4>
+        <br>
+        <p><i>In my real portfolio here is where I would probably insert some samples from my music portfolio</i></p>
+        <br>
+      </div>
+      <div class="rotating-container">
+        <img src="Images/record.png" class="round-image" alt="red vinyl record"/>
+        <img src="Images/album1.png" class="round-image" alt="Mac Miller album cover" onclick="openModal(this)" />
+        <img src="Images/album2.png" class="round-image" alt="Los Campensinos album cover" onclick="openModal(this)" />
+        <img src="Images/album3.png" class="round-image" alt="Aaron May album cover" onclick="openModal(this)" />
+        <img src="Images/album4.png" class="round-image" alt="Fiona Apple album cover" onclick="openModal(this)" />
+        <img src="Images/album5.png" class="round-image" alt="Des Rocs album cover" onclick="openModal(this)" />
+        <img src="Images/album6.png" class="round-image" alt="Sabrina Carpenter album cover" onclick="openModal(this)" />
+        <img src="Images/album7.png" class="round-image" alt="Steve Lacy album cover" onclick="openModal(this)" />
+        <img src="Images/album8.png" class="round-image" alt="Ariana Grande album cover" onclick="openModal(this)" />
+      </div>
+    </div>
+
+    <!-- Marquee -->
+    <div class="marquee-container">
+      <div class="marquee-track">
+        <span class="marquee-content">
+          –KEEP–SCROLLLING–KEEP–SCROLLING–KEEP–SCROLLING–
+          KEEP–SCROLLLING–KEEP–SCROLLING–KEEP–SCROLLING–
+          KEEP–SCROLLLING–KEEP–SCROLLING–KEEP–SCROLLING–
+          KEEP–SCROLLLING–KEEP–SCROLLING–KEEP–SCROLLING–
+          KEEP–SCROLLLING–KEEP–SCROLLING–KEEP–SCROLLING–
+          KEEP–SCROLLLING–KEEP–SCROLLING–KEEP–SCROLLING
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <!-- Video -->
+    <div class="video-container">
+      <video id="myVideo" muted playsinline>
+        <source src="Images/papervideo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+
+      <!-- Contact Me Section -->
+      <div class="contact-overlay">
+        <div class="contact-content">
+          <h2>Contact Me</h2>
+          <p>Feel free to reach out! I'm available for freelance work and collaborations.</p>
+          <form action="mailto:youremail@example.com" method="POST" enctype="text/plain">
+            <input type="email" name="email" placeholder="Your Email" required />
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+      <section id="contact"></section>
+  </footer>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="JS/home.js"></script>
+  <script src="JS/gallery.js"></script>
+  <script src="JS/top.js"></script>
+  <script src="JS/bottom.js"></script>
+
+
+</body>
+
+</html>
