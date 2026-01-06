@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Town Overview - Stardew Valley</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/overview.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+20&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+25&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="overview.html">Town Overview</a></li>
+                <li><a href="npcs.html">The Villagers</a></li>
+                <li><a href="activities.html">Activities</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="text-box">
+            <h2>Welcome to Stardew Valley!</h2>
+            <p>Take a tour of the Valley's most iconic locations with our interactive map!</p>
+        </div>
+
+
+
+        <div class="map-container">
+            <!-- Map Image (Must be inside the same container as the labels) -->
+            <img src="images/maps/valleymap.webp" alt="Map of Stardew Valley" class="map-image">
+
+            <!-- Interactive Labels -->
+            <button class="map-label" style="top: 40%; left: 32%;" data-section="farm">Farm</button>
+            <button class="map-label" style="top: 50%; left: 57%;" data-section="town">Pelican Town</button>
+            <button class="map-label" style="top: 77%; left: 72%;" data-section="beach">Beach</button>
+            <button class="map-label" style="top: 25%; left: 60%;" data-section="mountains">Mountains</button>
+            <button class="map-label" style="top: 60%; left: 25%;" data-section="forest">Cindersap Forest</button>
+            <button class="map-label" style="top: 7%; left: 15%;" data-section="desert">Calico Desert</button>
+            <button class="map-label" style="top: 30%; left: 40%;" data-section="bus">Bus Stop</button>
+        </div>
+
+    </main>
+
+    <div id="map-popup" class="popup">
+        <div class="popup-content">
+            <span id="close-popup">&times;</span>
+            <img id="popup-image" src="" alt="Location Preview">
+            <p id="popup-text"></p>
+        </div>
+    </div>
+
+    <script src="scripts/map.js"></script>
+
+    <footer>
+        <p>2025 Stardew Valley Travel Guide by Catherine Pitman</p>
+    </footer>
+</body>
+
+</html>

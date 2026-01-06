@@ -1,0 +1,73 @@
+
+.npc-grid-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    min-height: 100vh;
+}
+
+.npc-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    width: 100%;
+    max-width: 75%;
+    text-align: center;
+}
+
+.category {
+    background: linear-gradient(to bottom, #E3A869, #D5975A);
+    border: 8px solid #9C5C1B;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+    color: #4B250D;
+    padding: 20px;
+    box-shadow: 4px 4px 0px #6B3F1A;
+    width: 100%;
+    max-width: 1000px;
+    padding: auto;
+}
+
+.npc-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-top:10px;
+}
+
+.npc {
+    width: 120px; /* Adjust as needed */
+    height: 60px; /* Increased height to fit image + name */
+    display: flex;
+    flex-direction: column; /* Stack image above text */
+    align-items: center;
+    justify-content: flex-end;
+    text-align: center;
+    padding-top: 80px; /* Space for the headshot */
+    background-color: #e0f7fa;
+    border-radius: 5px;
+    color: #4B250D;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.npc:hover {
+    background-color: #4B250D;
+    color: #ffffff;
+}
+
+.npc img {
+    width: 100px; 
+    height: 100px; 
+    margin-bottom: 10px; /* Space between the image and the name */
+}
+
+.npc p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #4B250D;
+}

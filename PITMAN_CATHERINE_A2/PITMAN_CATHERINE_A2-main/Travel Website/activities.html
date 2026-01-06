@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Things to Do - Stardew Valley</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/activities.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+20&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+25&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="overview.html">Town Overview</a></li>
+                <li><a href="npcs.html">The Villagers</a></li>
+                <li><a href="activities.html">Activities</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="activities">
+            <div class="text-box">
+                <h2>Get Involved!</h2>
+                <p>With a wide range of exciting events year-round, <br> engage in fishing, mining, farming, and more!
+                </p>
+            </div>
+        </section>
+
+        <!-- Mayor Lewis Pop-Up -->
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <span id="closePopup" class="popup-close">&times;</span>
+                <h2>Check our events board!</h2>
+                 <br>
+                <p> I've attached a version of our local calendar so you folks can keep up do date with the comings and goings of the valley!</p>
+                <p>All the little flag and star icons represent festivals, the little hooks represent fishing events. You can find descriptions of each event by season below.</p>
+
+                <br>
+                <p>P.S Each villager icon represents their birthday! if you go click on their profile in the villagers tab you can see all their favourite gifts!</p>
+            </div>
+            <img src="images/popuplewis.png" alt="Mayor Lewis" class="popup-image">
+        </div>
+
+        <div class="main-container">
+            <!-- Calendar Section -->
+            <div class="Calendar">
+                <img id="imageDisplay" src="images/spring.png" alt="Pelican Town Calendar">
+            </div>
+        
+            <div class="calendar-buttons">
+                <button id="prevButton" class="nav-button">&#8592;</button>
+                <button id="nextButton" class="nav-button">&#8594;</button>
+            </div>
+        </div>
+
+            <div class="CalendarDescription">
+                <div class="text-image-container">
+                    <!-- Spring -->
+                    <div class="content-box">
+                        <div class="image-text-box">
+                            <p><b>The Egg Festival takes place on the 13th of every Spring in Pelican Town Square
+                                    between 9am and 2pm.</b> The featured attraction of the Egg Festival is the Egg
+                                Hunt. If you choose to participate you and some other villagers will have 50 seconds to
+                                search for small colored eggs hidden around Pelican Town. The winner will receive the
+                                prized Straw Hat as a reward the first year they win, and a Prize Ticket afterwards.
+                                There is also a locally run booth where you can purchase some exclusive Egg Festival
+                                goodies and Decor!</p>
+                            <img src="images/events/eggfest.png" alt="Egg Festival">
+                        </div>
+                        <div class="image-text-box">
+                            <p><b>The Desert Festival takes place in the Desert during Spring 15-17, from 10am to
+                                    2am.</b>During the festivale there are specialty villager pop up shops, a specialty
+                                food truck, a series of races and tons of fun challenges to complete for event currency,
+                                Calico eggs! There is also a daily opportunity to receive a free makeover from Emily.
+                            </p>
+                            <img src="images/events/desertfest.png" alt="Desert Festival">
+                        </div>
+                        <div class="image-text-box">
+                            <p><b>The Flower Dance event takes place on the 24th of every Spring in Cindersap Forest
+                                    between 9am and 2pm.</b> The dance takes place in the far west of the forest, across
+                                the bridge that is accessible only during the Flower Dance. During this festival, you
+                                can invite one of the bachelors or bachelorettes to dance with you! Though a warning,
+                                the Flower Dance is a big deal, and villagers will only dance with you if theyve gotten
+                                to know you a bit already. There is also a booth set up where the player can purchase
+                                some spring items!</p>
+                            <img src="images/events/flowerdance.jpg" alt="Flower Dance">
+                        </div>
+                    </div>
+
+                    <!-- Summer -->
+                    <div class="content-box">
+                        <div class="image-text-box">
+                            <p><b>The Luau takes place on the 11th of every Summer at the beach between 9am and 2pm.</b>
+                                A central feature of the Luau is the potluck soup. Villagers bring different ingredients
+                                to prepare this soup for the Governor, who tastes and judges it.
+                            </p>
+                            <img src="images/events/luau.png" alt="Luau">
+                        </div>
+                        <div class="image-text-box">
+                            <p><b>The Trout Derby takes place during Summer 20-21 in Cindersap Forest near the river
+                                    below Marnie's Ranch.</b> It starts at 6:10am and ends at 2am. Players can catch
+                                Rainbow Trout all day long in the Cindersap Forest river. Each Rainbow Trout caught has
+                                a chance to give a Golden Tag. Golden Tags can be exchanged for prizes at the derby
+                                booth.</p>
+                            <img src="images/events/derby.png" alt="Derby">
+                        </div>
+                        <div class="image-text-box">
+                            <p> <b>The Dance of the Moonlight Jellies takes place on the 28th of every Summer. </b>The
+                                festival takes place at the beach between 10pm and 12am. During the festival, villagers
+                                gather at the docks to watch migrating jellyfish who are attracted to the light of a
+                                torch that Mayor Lewis lights.</p>
+                            <img src="images/events/dancejelly.jpg" alt="Dance Jelly">
+                        </div>
+                        <div class="event-image-box">
+
+
+
+                        </div>
+                    </div>
+
+                    <!-- Fall -->
+                    <div class="content-box">
+                        <div class="image-text-box">
+                            <p><b>The Stardew Valley Fair takes place on the 16th of Fall every year in Pelican Town
+                                    between 9am and 3pm.</b> There are several games where you can gain Star Tokens, a
+                                currency that can be exchanged for prizes at the Shop near the entrance to the Bus Stop.
+                                The Fair also has a Grange Display contest where you can show off the products of the
+                                farm and gain Star Tokens!</p>
+                            <img src="images/events/fair.png" alt="Fair">
+                        </div>
+                        <div class="image-text-box">
+                            <p><b>The Spirit's Eve festival takes place on the 27th of Fall every year in Pelican Town
+                                    between 10pm and 11:50pm.
+                                </b>The festival features a maze where it is possible to obtain valuable secret prize.
+                                Theres also a pop up shop featuring some exclusive Spirit's Eve items.
+                            </p>
+                            <img src="images/events/spiritseve.png" alt="Spirit’s Eve">
+                        </div>
+                    </div>
+
+                    <!-- Winter -->
+                    <div class="content-box">
+                        <div class="image-text-box">
+                            <p><b>The Festival of Ice takes place on the 8th of every Winter in Cindersap Forest between
+                                    9am and 2pm.</b>At the festival there are ice sculptures and igloos set up as well
+                                as a small shop selling festive decorations. There's also an Ice Fishing Contest that
+                                you can take part in along with several of the villagers.</p>
+                            <img src="images/events/icefest.jpg" alt="Festival of Ice">
+                        </div>
+                        <div class="image-text-box">
+                            <p><b>The SquidFest takes place during Winter 12-13 on the Beach. It starts at 6:10am and
+                                    ends at 2am.</b> Depending on how much Squid you catch you'll be able to win a wide
+                                variety of prizes throughout the festival with different prizes each day.
+                            </p>
+                            <img src="images/events/squidfest.png" alt="Squid Fest">
+                        </div>
+                        <div class="image-text-box">
+                            <p><b>The Night Market takes place during Winter 15-17, on the Beach, from 5pm-2am.</b>The
+                                festival features shops, a mermaid show, and a deep-sea fishing submarine where you can
+                                catch unique fish.</p>
+                            <img src="images/events/nightmarket.jpg" alt="Night Market">
+                        </div>
+                        <div class="image-text-box">
+                            <p><b>The Feast of the Winter Star takes place on the 25th of every Winter in Pelican Town
+                                    between 9am and 2pm.</b> The main event of the Feast of the Winter Star is the
+                                secret santa gift giving ceremony.</p>
+                            <img src="images/events/feast.png" alt="The Feast of the Winter Star">
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="scripts/activities.js"></script>
+
+    <footer>
+        <p>2025 Stardew Valley Travel Guide by Catherine Pitman</p>
+    </footer>
+</body>
+
+</html>

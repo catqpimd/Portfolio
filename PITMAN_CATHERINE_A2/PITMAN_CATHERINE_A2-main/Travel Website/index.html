@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stardew Valley Travel Guide</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+20&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+25&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="overview.html">Town Overview</a></li>
+                <li><a href="npcs.html">The Villagers</a></li>
+                <li><a href="activities.html">Activities</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="logo">
+            <img src="images/logo.png" alt="Stardew Valley Logo">
+        </div>
+
+        <!-- Mayor Lewis Pop-Up -->
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <span id="closePopup" class="popup-close">&times;</span>
+                <h2>Welcome to Stardew Valley!</h2>
+                <p>My name is Lewis, and I’m the mayor of Pelican Town, what many consider to be the heart of the valley!</p>
+            </div>
+            <img src="images/popuplewis.png" alt="Mayor Lewis" class="popup-image">
+        </div>
+
+        <section class="intro">
+            <div class="text-box">
+                <h1>Welcome to Stardew Valley!</h1>
+                <br>
+                <p>Escape to the countryside and create the farm of your dreams! Transform overgrown fields into a
+                    thriving homestead, raise animals, grow crops, and craft useful items—all at your own pace. Learn to
+                    live off the land as you fish in serene waters, forage for seasonal delights, and embrace the joys
+                    of rural life.
+                </p>
+            </div>
+        </section>
+
+        <div class="carousel-container">
+            <button class="carousel-button prev" onclick="moveSlide(-1)">&#10094;</button>
+            <div class="carousel-images">
+                <img src="images/carousel1.png" alt="Image 1" class="carousel-image">
+                <img src="images/carousel2.png" alt="Image 2" class="carousel-image">
+                <img src="images/carousel3.png" alt="Image 3" class="carousel-image">
+                <img src="images/carousel4.png" alt="Image 4" class="carousel-image">
+                <img src="images/carousel5.png" alt="Image 4" class="carousel-image">
+            </div>
+            <button class="carousel-button next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+
+        <section class="intro2">
+            <div class="text-box">
+                <h1>Join our community!</h1>
+                <br>
+                <p>With over 30 friendly residents in Pelican Town, you'll quickly find yourself becoming part of the
+                    local charm. Build friendships, help with town events, and maybe even find that special someone
+                    among 12 eligible bachelors and bachelorettes</p>
+                <br>
+                <p>But thats not all! Adventure awaits beneath the surface for only those brave enough to seek it out
+                    Venture into deep, mysterious caves where hidden treasures—and formidable creatures—lurk in the
+                    shadows.</p>
+                <br>
+                <h2>The possibilities are endless in Stardew Valley. Your new life starts now!</h2>
+
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <br><br>
+
+    <footer>
+        <p>2025 Stardew Valley Travel Guide by Catherine Pitman</p>
+    </footer>
+
+    <script src="scripts/home.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,141 @@
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0%;
+    height: 100vh;
+}
+
+.logo img {
+    max-width: 75%;
+    height: auto;
+}
+
+.main {
+    display: grid;
+    position: static;
+}
+
+section.intro {
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    margin-top: -5%;
+    margin-bottom: -5%;
+}
+
+.intro2 .text-box {
+    width: 70%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section.intro2 {
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    padding-top: 0px;
+    padding-bottom: 5%;
+    margin-top: -5%;
+}
+
+.intro .text-box {
+    width: 70%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Carousel  */
+
+.carousel-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100vh;
+    width: 80%;
+    max-width: 800px;
+    overflow: hidden;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-image {
+    width: 100%;
+    object-fit: cover;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.carousel-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Mayor lewis popup */
+.popup {
+    display: none;
+    position: fixed;
+    bottom: 5%;
+    right: 1%;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 1000;
+    width: 30%;
+    height: auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+.popup-content {
+    position: relative;
+    padding-right: 10%;
+    font-size: 16px;
+}
+
+.popup-image {
+    position: absolute;
+    bottom: 0%;
+    right: -5%;
+    width: 20%;
+    height: auto;
+  
+}
+
+.popup-close {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    font-size: 30px;
+    cursor: pointer;
+    color: black;
+}
